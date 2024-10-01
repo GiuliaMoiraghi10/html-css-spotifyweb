@@ -162,6 +162,27 @@ button{
     background-color: #7B7B7B;
 }
 
+.cta-vol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 11px;
+}
+
+.btn-vol{
+    color: white;
+    font-size: 12px;
+}
+
+.vol-bar::after{
+    content: '';
+    display: block;
+    width: 125px;
+    height: 3px;
+    border-radius: 999px;
+    background-color: #7B7B7B;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 878px){
@@ -170,12 +191,20 @@ button{
         width: 350px;
     }
 
+    .play .music-play{
+        width: 330px;
+    }
+
 }
 
 @media (max-width: 639px){
     
     .play{
         width: 240px;
+    }
+
+    .play .music-play{
+        width: 230px;
     }
 
 }
@@ -188,5 +217,9 @@ button{
     
     .play{
         width: 210px;
+    }
+
+    .play .music-play{
+        width: 200px;
     }
 }
