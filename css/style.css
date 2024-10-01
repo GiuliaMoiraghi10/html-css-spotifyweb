@@ -191,7 +191,7 @@ button{
         width: 350px;
     }
 
-    .play .music-play{
+    .play .time-play{
         width: 330px;
     }
 
@@ -203,7 +203,7 @@ button{
         width: 240px;
     }
 
-    .play .music-play{
+    .play .time-play{
         width: 230px;
     }
 
@@ -219,7 +219,7 @@ button{
         width: 210px;
     }
 
-    .play .music-play{
+    .play .time-play{
         width: 200px;
     }
 }
