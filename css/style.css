@@ -63,5 +63,8 @@ html{
 }
 
 @media (max-width: 552px){
-    
+
+    .sidebar{
+        width: 50px;
+    }  
 }
