@@ -13,6 +13,43 @@ html{
 /* DEBUG */
 .debug{
     border: 2px solid purple;
+    padding: 10px;
+}
+
+.debug-red{
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.debug-blu{
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* LAYOUT */
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex-grow: 10;
+    display: flex;
+}
+
+.content{
+    flex-grow: 1;
+    order: 2;
+}
+
+.sidebar{
+    width: 228px;
+    order: 1;
+}
+
+.play-bar{
+    height: 92px;
 }
 
 /* MEDIA QUERY */
