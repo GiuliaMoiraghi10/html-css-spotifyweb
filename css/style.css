@@ -16,6 +16,16 @@ html{
     --player: #282828;
 }
 
+img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a{
+    color: currentColor;
+}
+
 /* DEBUG */
 .debug{
     border: 2px solid purple;
@@ -66,6 +76,10 @@ html{
 
 .brano{
     width: 240px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 11px;
 }
 
 .play{
@@ -76,6 +90,24 @@ html{
     width: 240px;
 }
 
+.img-brano{
+    width: 48px;
+}
+
+.icon-brano{
+    color: #7B7B7B;
+}
+
+.txt-brano{
+    color: white;
+    font-size: 14px;
+}
+
+.txt-brano-name{
+    font-size: 12px;
+    font-weight: 400;
+    color: #7B7B7B;
+}
 /* MEDIA QUERY */
 
 @media (max-width: 878px){
