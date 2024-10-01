@@ -1,0 +1,30 @@
+/* FONT */
+html{
+    font-family: "Montserrat", system-ui;
+}
+
+/* DEFAULT */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* DEBUG */
+.debug{
+    border: 2px solid purple;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 878px){
+
+}
+
+@media (max-width: 639px){
+    
+}
+
+@media (max-width: 552px){
+    
+}
