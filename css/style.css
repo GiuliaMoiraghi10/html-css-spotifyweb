@@ -10,6 +10,12 @@ html{
     padding: 0;
 }
 
+:root{
+    --sidebar: #000000;
+    --main: #141922;
+    --player: #282828;
+}
+
 /* DEBUG */
 .debug{
     border: 2px solid purple;
@@ -41,30 +47,60 @@ html{
 .content{
     flex-grow: 1;
     order: 2;
+    background-color: var(--main);
 }
 
 .sidebar{
     width: 228px;
     order: 1;
+    background-color: var(--sidebar);
 }
 
 .play-bar{
     height: 92px;
+    background-color: var(--player);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brano{
+    width: 240px;
+}
+
+.play{
+    width: 550px;
+}
+
+.vol{
+    width: 240px;
 }
 
 /* MEDIA QUERY */
 
 @media (max-width: 878px){
 
+    .play{
+        width: 350px;
+    }
+
 }
 
 @media (max-width: 639px){
     
+    .play{
+        width: 240px;
+    }
+
 }
 
 @media (max-width: 552px){
 
     .sidebar{
         width: 50px;
-    }  
+    } 
+    
+    .play{
+        width: 210px;
+    }
 }
