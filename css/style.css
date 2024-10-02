@@ -71,6 +71,29 @@ ul, ol{
     background-color: var(--main);
 }
 
+/* NAVBAR */
+
+.upgrade{
+    height: 95px;
+}
+
+.navbar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.items-nav{
+    font-weight: 800;
+    font-size: 13px;
+    color: #7B7B7B;
+}
+
+/* PLAYER */
+
 .play-bar{
     padding: 10px;
     background-color: var(--player);
@@ -252,6 +275,8 @@ ul, ol{
     width: 38px;
     height: 38px;
     color: var(--sidebar);
+    text-align: center;
+    padding: 11px;
 }
 
 .add-playlist{
