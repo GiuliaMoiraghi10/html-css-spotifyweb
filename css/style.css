@@ -71,14 +71,8 @@ ul, ol{
     background-color: var(--main);
 }
 
-.sidebar{
-    width: 228px;
-    order: 1;
-    background-color: var(--sidebar);
-}
-
 .play-bar{
-    padding: 20px 10px;
+    padding: 10px;
     background-color: var(--player);
     display: flex;
     justify-content: space-between;
@@ -185,9 +179,16 @@ ul, ol{
 
 /* SIDEBAR */
 
+.sidebar{
+    width: 228px;
+    order: 1;
+    background-color: var(--sidebar);
+    padding-left: 10px;
+}
+
 .logo{
     width: 135px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -242,11 +243,24 @@ ul, ol{
     width: 38px;
     height: 38px;
     color: var(--sidebar);
-    margin: 0 auto;
 }
 
 .add-playlist{
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.name-playlist{
+    gap: 20px;
+    font-weight:700;
+}
+
+.name-playlist > *{
+    margin-bottom: 20px;
+    font-size: 13px;
 }
 
 .profile{
