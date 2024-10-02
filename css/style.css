@@ -26,15 +26,11 @@ a{
     color: currentColor;
 }
 
-button{
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    text-align: inherit;
-    font: inherit;
-    border-radius: 0;
-    appearance: none;
+button {
+	background-color: transparent;
+	border: none;
+	color: currentColor;
+	/* font-size: inherit; */
 }
 
 /* DEBUG */
@@ -78,7 +74,7 @@ button{
 }
 
 .play-bar{
-    height: 92px;
+    padding: 20px 10px;
     background-color: var(--player);
     display: flex;
     justify-content: space-between;
@@ -93,12 +89,41 @@ button{
     margin-left: 11px;
 }
 
-.play{
-    width: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.player {
+	width: 45%;
+}
+
+.player__controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+    color: white;
+}
+
+.player__controls .controls__icon {
+	font-size: 24px;
+}
+
+.player__controls .controls__icon.icon__play {
+	font-size: 32px;
+	margin: 0 12px;
+}
+
+.player__progress {
+	display: flex;
+	gap: 20px;
+	font-size: 12px;
+	align-items: center;
+	padding: 14px 0;
+    color: white;
+}
+
+.slider {
+	height: 4px;
+	width: 120px;
+	flex-grow: 1;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .vol{
@@ -124,13 +149,6 @@ button{
     color: #7B7B7B;
 }
 
-.cta-play{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
 .btn-play{
     font-size: 30px;
     color: white;
@@ -138,28 +156,6 @@ button{
 
 .btn-music{
     color: white;
-}
-
-.time{
-    color: white;
-    font-size: 11px;
-}
-
-.time-play{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    row-gap: 10px;
-}
-
-.music::after{
-    content: '';
-    display: block;
-    width: 430px;
-    height: 5px;
-    border-radius: 999px;
-    background-color: #7B7B7B;
 }
 
 .cta-vol{
@@ -183,29 +179,49 @@ button{
     background-color: #7B7B7B;
 }
 
+/* SIDEBAR */
+
+.logo{
+    width: 135px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-menu{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.home{
+    width: 22px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.search, .library{
+    color: #7B7B7B;
+    width: 22px;
+    margin-bottom: 12px;
+}
+
+.sidebar{
+    flex-shrink: 0;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 878px){
 
-    .play{
-        width: 350px;
-    }
-
-    .play .time-play{
-        width: 330px;
-    }
 
 }
 
 @media (max-width: 639px){
     
-    .play{
-        width: 240px;
-    }
 
-    .play .time-play{
-        width: 230px;
-    }
 
 }
 
@@ -215,11 +231,4 @@ button{
         width: 50px;
     } 
     
-    .play{
-        width: 210px;
-    }
-
-    .play .time-play{
-        width: 200px;
-    }
 }

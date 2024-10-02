@@ -19,17 +19,30 @@
             <div class="content"></div>
             <!-- SIDEBAR -->
             <div class="sidebar">
-                <div class="logo debug">
+                <div class="logo">
                     <a href="#"><img src="./img/logo.svg" alt=""></a>
                 </div>
-                <div class="menu debug"></div>
-                <div class="playlist"></div>
-                <div class="profile"></div>
+                <div class="menu debug">
+                    <div class="cta-menu">
+                        <img class="home" src="./img/home.svg" alt="">
+                        <strong>Home</strong>
+                    </div>
+                    <div class="cta-menu">
+                        <img class="search" src="./img/search.svg" alt="">
+                        <strong>Searc</strong>
+                    </div>
+                    <div class="cta-menu">
+                        <img class="library" src="./img/libreria.svg" alt="">
+                        <strong>Library</strong>
+                    </div>
+                </div>
+                <div class="playlist debug"></div>
+                <div class="profile debug"></div>
             </div>
         </div>
 
         <!-- PLAYER -->
-        <div class="player">
+        <div class="player-area">
             <div class="play-bar">
                 <div class="brano">
                     <figure class="img-brano"><img src="./img/sinister.jpeg" alt=""></figure>
@@ -37,7 +50,31 @@
                     <span class="icon-brano"><a href="#"><i class="fa-regular fa-heart"></i></span></a>
                     <span class="icon-brano"><a href="#"><i class="fa-regular fa-folder"></i></span></a>
                 </div>
-                <div class="play">
+                <div class="player">
+					<div class="player__controls">
+						<button class="controls__icon">
+							<i class="fa-solid fa-shuffle"></i>
+						</button>
+						<button class="controls__icon">
+							<i class="fa-solid fa-backward-step"></i>
+						</button>
+						<button class="controls__icon icon__play">
+							<i class="fa-regular fa-circle-play"></i>
+						</button>
+						<button class="controls__icon">
+							<i class="fa-solid fa-forward-step"></i>
+						</button>
+						<button class="controls__icon">
+							<i class="fa-solid fa-arrow-rotate-right"></i>
+						</button>
+					</div>
+					<div class="player__progress">
+						<div class="progress__time">0:25</div>
+						<div class="slider"></div>
+						<div class="total__time">4:56</div>
+					</div>
+				</div>
+                <!-- <div class="play">
                     <div class="cta-play">
                         <button class="btn-music"><i class="fa-solid fa-shuffle"></i></button>
                         <button class="btn-music"><i class="fa-solid fa-backward-step"></i></button>
@@ -50,7 +87,7 @@
                         <span class="music"></span>
                         <strong class="time">4:35</strong>
                     </div>      
-                </div>
+                </div> -->
                 <div class="vol">
                     <div class="cta-vol">
                         <button class="btn-vol"><a href="#"><i class="fa-solid fa-list"></i></a></button>
