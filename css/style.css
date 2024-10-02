@@ -75,6 +75,7 @@ ul, ol{
 
 .upgrade{
     height: 95px;
+    background-color: #00000088;
 }
 
 .navbar{
@@ -105,9 +106,8 @@ ul, ol{
 .brano{
     width: 240px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 11px;
 }
 
 .player {
