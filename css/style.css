@@ -224,6 +224,8 @@ ul, ol{
 
 .sidebar{
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .playlist{
@@ -264,9 +266,46 @@ ul, ol{
 }
 
 .profile{
+    color: #7B7B7B;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 10px;
     margin-top: auto;
 }
 
+
+.line-profile{
+    background-color: #7B7B7B;
+    height: 1px;
+    width: 190px;
+    text-align: center;
+}
+
+.name-profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.name-profile img{
+    background-color: #7B7B7B;
+    border-radius: 999px;
+    padding: 3px;
+    width: 29px;
+    height: 29px;
+}
+
+.install-app{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name-user{
+    color: white;
+    font-size: 14px;
+}
 
 /* MEDIA QUERY */
 
@@ -315,5 +354,6 @@ ul, ol{
         width: 22px;
         margin: 0 auto;
         margin-bottom: 15px;
+        margin-top: 15px;
     }
 }
