@@ -80,7 +80,7 @@ ul, ol{
 .upgrade{
     height: 95px;
     background-color: #00000088;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -174,7 +174,15 @@ ul, ol{
     font-size: 12px;
 }
 
+.play-img.img-circle{
+    border-radius: 50%;
+}
+
 /* PLAYER */
+
+.player-area{
+    position: relative;
+}
 
 .play-bar{
     padding: 10px;
@@ -182,6 +190,10 @@ ul, ol{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
 }
 
 .brano{
@@ -287,6 +299,7 @@ ul, ol{
     order: 1;
     background-color: var(--sidebar);
     padding-left: 10px;
+    z-index: 2;
 }
 
 .logo{
